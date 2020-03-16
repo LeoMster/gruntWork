@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <link type="text/css" rel="styleSheet" href="index.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="left-div mL">
+            <div>
+                <img class="img" src="baidu.png" alt="/">
+            </div>
+            <div class="title-div">
+                <h3>用科技</h3>
+                <p>让复杂的世界更简单</p>
+            </div>
+        </div>
+        <div class="right-div mL">
+            <div class="form">
+                <div class="form-title">
+                    <h3>欢迎注册</h3>
+                    <p>已有账号？<span href="#">登录</span></p>
+                </div>
+
+                <span class="sp">用户名</span>
+                <input class="ipt" id="name" type="text" placeholder="请设置用户名">
+                <div id="name-container">
+                    <div id="name-msg"></div>
+                    <div id="fl-div">设置后不可更改，中英文均可，最长14个英文或7个汉字</div>
+                </div>
+
+                <span class="sp">手机号</span>
+                <input class="ipt" id="telephone" type="text" placeholder="可用于登录或找回密码">
+                <div id="telephone-msg"></div>
+        
+                <span class="sp">密&emsp;码</span>
+                <input class="ipt" id="pwd" type="text" placeholder="请设置登录密码">
+                <div id="pwd-container">
+                    <div id="pwd-msg"></div>
+                    <div id="fl-pwd">
+                        <div id="p0">
+                            <span id="sp0"></span>
+                            <span>长度为8~14个字符</span>
+                        </div>
+                        <div id="p1">
+                            <span id="sp1"></span>
+                            <span>字母/数字以及标点符号至少包含2种</span>
+                        </div>
+                        <div id="p2">
+                            <span id="sp2"></span>
+                            <span>不允许有空格、中文</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <span class="sp">验证码</span>
+                <input class="code-ipt" id="code" type="text" placeholder="请输入验证码">
+                <input class="btn-ipt" id="code-btn" type="button" value="获取验证码">
+                <div id="code-msg"></div>
+                
+        
+                <input id="register" type="button" value="注册">
+
+                <p class="footer">
+                    <input type="checkbox">
+                    <label>阅读并接受</label>
+                    <a href="#">《百度用户协议》</a>
+                    <label>及</label>
+                    <a href="#">《百度隐私权保护声明》</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- build:js bundle.min.js -->
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="prompt.js"></script>
+<!-- endbuild -->
+</html>
