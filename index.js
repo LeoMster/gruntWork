@@ -160,8 +160,8 @@ $(function(){
     // 验证码效果
     $("#code-btn").click(function(){
         var num = 25;
-
         $("#code-msg").html("");
+
         var timer = setInterval(function(){
             num = num-1;
             $("#code-btn").attr("value",num);
@@ -169,7 +169,12 @@ $(function(){
                 $("#code-msg").html("请求超时,请稍后再试");
                 $("#code-btn").attr("value","获取验证码");
                 num = 25;
+                $("#code-btn").attr("disabled",false);
+                $("#code-btn").css("cursor","pointer");
                 clearInterval(timer);
+            }else{
+                $("#code-btn").attr("disabled",true);
+                $("#code-btn").css("cursor","not-allowed");
             }
         },1000);     
     });
